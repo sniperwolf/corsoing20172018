@@ -24,9 +24,11 @@
     "aspnet-webpack": "^2.0.1",
     "awesome-typescript-loader": "3.2.1",
     "bootstrap": "3.3.7",
+    "babel-eslint": "^8.0.2",
     "css": "2.2.1",
     "css-loader": "0.28.4",
     "es6-shim": "0.35.3",
+    "eslint": "^4.11.0",
     "event-source-polyfill": "0.0.9",
     "expose-loader": "0.7.3",
     "extract-text-webpack-plugin": "2.1.2",
@@ -41,7 +43,8 @@
     "rxjs": "5.4.2",
     "style-loader": "0.18.2",
     "to-string-loader": "1.1.5",
-    "typescript": "2.4.1",
+    "typescript": "^2.6.1",
+    "tslint": "^5.8.0",
     "url-loader": "0.5.9",
     "webpack": "2.5.1",
     "webpack-hot-middleware": "2.18.2",
@@ -58,6 +61,9 @@
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.0",
-    "karma-webpack": "2.0.3"
+    "karma-webpack": "2.0.3",
+    "eslint-config-standard": "^10.2.1",
+    "standard": "^10.0.3",
+    "tslint-config-standard": "^7.0.0"
   }
 }

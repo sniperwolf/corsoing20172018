@@ -266,5 +266,27 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
-/ServiceAPI/ConsoleApp1
-/ServiceAPI/ConsoleApp2
+
+# Vagrant and Node #
+####################
+npm-debug.txt
+Vagrantfile
+Cheffile
+.vagrant/
+.sass-cache/
+node_modules/
+--time/
+/bower_components/
+npm-debug.log
+/npm-debug.log.*
+
+
+# Editor Prj #
+##############
+*.sublime-project
+*.sublime-workspace
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

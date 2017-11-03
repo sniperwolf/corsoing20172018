@@ -5,27 +5,20 @@ using System.Text;
 
 namespace ServiceAPI.Dal
 {
-
-    public class Teacher
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-
     public class Student
     {
         public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string Surname { get; set; }
 
         public string BirthPlace { get; set; }
 
-
         public string RegistrationNumber { get; set; }
 
-        public bool Gender { get; set; } //true male,false female
-
+        // "1": Male, "0": Female
+        public bool Gender { get; set; }
 
         public DateTime DateOfBirth { get; set; }
     }
