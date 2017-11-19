@@ -1,22 +1,19 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using ServiceAPI.Dal;
-using System;
-using System.Threading.Tasks;
+﻿using System.IO;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ServiceAPI
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var host = new WebHostBuilder()
-                .UseKestrel()
-                .UseStartup<Startup>()
-                .Build();
-
-            Task restService = host.RunAsync();
-
-            restService.Wait();
+            BuildWebHost(args).Run();
         }
+
+        public static IWebHost BuildWebHost(string[] args) =>
+        WebHost.CreateDefaultBuilder(args)
+        .UseStartup<Startup>()
+        .Build();
     }
 }

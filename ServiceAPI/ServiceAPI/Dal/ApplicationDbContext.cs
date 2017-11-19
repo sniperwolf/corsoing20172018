@@ -1,18 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ServiceAPI.Entities;
 
 namespace ServiceAPI.Dal
 {
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
-
-        public DbSet<Admin> Admin { get; set; }
-
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
 
         protected override void
         OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder.UseMySql(@"Server=localhost;database=corso;uid=root;");
+        => optionsBuilder.UseMySql(@"Server=localhost;database=corso;uid=root;");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,7 +25,6 @@ namespace ServiceAPI.Dal
 
                 entityType.Relational().TableName = entityType.ClrType.Name;
             }
-
             base.OnModelCreating(modelBuilder);
         }
     }

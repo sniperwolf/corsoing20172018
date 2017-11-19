@@ -7,6 +7,10 @@
 *.userosscache
 *.sln.docstates
 
+# Generated files
+ClientApp/app/**/*.js
+ClientApp/app/**/*.js.map
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

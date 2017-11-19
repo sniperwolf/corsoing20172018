@@ -1,0 +1,19 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2>Non-logged Homepage</h2>
+
+  <h3>All registered Students:</h3>
+
+  <ul *ngIf="students.lenght">
+    <li *ngFor="let student of students">
+      {{student.registrationNumber}} ({{student.firstName}} {{student.lastName}})
+    </li>
+  </ul>
+
+  <div *ngIf="!students.lenght" class="alert alert-warning">
+    Anauthorized action!
+  </div>
+
+  <a [routerLink]="['/login']" class="btn btn-primary">Login</a>
+  <a [routerLink]="['/register-student']" class="btn btn-link">Register Student</a>
+  <a [routerLink]="['/register-teacher']" class="btn btn-link">Register Teacher</a>
+</div>

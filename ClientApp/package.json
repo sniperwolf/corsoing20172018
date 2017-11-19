@@ -1,0 +1,46 @@
+{
+  "name": "client-app",
+  "version": "1.0.0",
+  "description": "Client Angular 5 API Consumer",
+  "keywords": [
+    "angular5",
+    "typescript"
+  ],
+  "author": "Fabrizio Fallico <me@fabriziofallico.com>",
+  "homepage": "https://github.com/sniperwolf/fallico-fabrizio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sniperwolf/fallico-fabrizio.git"
+  },
+  "scripts": {
+    "go": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^5.0.2",
+    "@angular/compiler": "^5.0.2",
+    "@angular/core": "^5.0.2",
+    "@angular/forms": "^5.0.2",
+    "@angular/http": "^5.0.2",
+    "@angular/platform-browser": "^5.0.2",
+    "@angular/platform-browser-dynamic": "^5.0.2",
+    "@angular/router": "^5.0.2",
+    "core-js": "^2.5.1",
+    "rxjs": "^5.4.3",
+    "systemjs": "^0.20.19",
+    "zone.js": "^0.8.18"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.34",
+    "concurrently": "^3.5.0",
+    "eslint-config-standard": "^10.2.1",
+    "lite-server": "^2.3.0",
+    "standard": "^10.0.3",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.5.3"
+  }
+}

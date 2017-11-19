@@ -1,0 +1,17 @@
+﻿<div class="col-md-6 col-md-offset-3">
+  <h1>Hi {{currentUser.firstName}}!</h1>
+  <p>You're logged in.</p>
+
+  <h3>All registered Students:</h3>
+  <ul>
+    <li *ngFor="let student of students">
+      {{student.registrationNumber}} ({{student.firstName}} {{student.lastName}})
+      <span *ngIf="student.id === currentUser.id"> - </span>
+      <a *ngIf="student.id === currentUser.id" (click)="deleteTeacher(student.id)">Delete</a>
+    </li>
+  </ul>
+
+  <p>
+    <a [routerLink]="['/login']">Logout</a>
+  </p>
+</div>
