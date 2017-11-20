@@ -7,7 +7,7 @@
     <li *ngFor="let student of students">
       {{student.registrationNumber}} ({{student.firstName}} {{student.lastName}})
       <span *ngIf="student.id === currentUser.id"> - </span>
-      <a *ngIf="student.id === currentUser.id" (click)="deleteTeacher(student.id)">Delete</a>
+      <a *ngIf="student.id === currentUser.id" (click)="deleteStudent(student.id)">Delete</a>
     </li>
   </ul>
 
